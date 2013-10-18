@@ -33,20 +33,20 @@
   - elsif !request_from_reversemortgageplan?
     %li
       %span.phone 416-969-8130
-    %li= link_to 'Home', SITE_URL ,{ :title => "Home" }
+    %li= link_to 'Home', SITE_URL ,{ :title => "Home & Commercial Mortgage Services" }
     %li= link_to 'About Us', '/about',{ :title => "About Us" }
-    %li= link_to 'Mortgage Rates', '/mortgage-rates'      
-    %li= link_to 'Mortgage Solutions', '/mortgages'      
-    %li= link_to 'Apply Now', pre_approval_application_path
-    %li= link_to 'Mortgage Renewal', '/mortgage-renewal'
-    %li= link_to 'Our Consultants', '/agents'    
-    %li= link_to 'Client Testimonials', '/testimonials' 
+    %li= link_to 'Mortgage Rates', '/mortgage-rates', {:title => 'Best Mortgage Rate'}    
+    %li= link_to 'Mortgage Solutions', '/mortgages', {:title => 'First & Second Residential Mortgage Solutions'}   
+    %li= link_to 'Apply Now', pre_approval_application_path, :title => 'Apply Now'
+    %li= link_to 'Mortgage Renewal', '/mortgage-renewal' , :title => 'Mortgage Renewal'
+    %li= link_to 'Our Consultants', '/agents', :title => 'Mortgage Agents & Specialists'
+    %li= link_to 'Client Testimonials', '/testimonials' , :title => 'Northwood Mortgage Testimonials'
     %li= link_to 'Mortgage Calculators', '/mortgage-calculators/mortgage-qualifier'
-    %li= link_to 'Careers', '/careers'      
-    %li= link_to 'Northwood Mortgage Life', '/northwood-mortgage-life'
-    %li= link_to 'Helpful Client Info', '/helpful-client-info'
-    %li= link_to 'Mortgage Information', '/mortgage-information'
-    %li= link_to 'Reverse Mortgage Plan', 'http://reversemortgageplan.ca'
-    %li= link_to 'Contact Us', '/contact'
+    %li= link_to 'Careers', '/careers'      , :title => 'Northwood Mortgage Careers'
+    %li= link_to 'Northwood Mortgage Life', '/northwood-mortgage-life', :title => 'Mortgage Insurance Coverage & Protection'
+    %li= link_to 'Helpful Client Info', '/helpful-client-info', :title => 'Helpful Client Info'
+    %li= link_to 'Mortgage Information', '/mortgage-information', :title => 'Mortgage Information'
+    %li= link_to 'Reverse Mortgage Plan', 'http://reversemortgageplan.ca', :title => 'Reverse Mortgage Plan'
+    %li= link_to 'Contact Us', '/contact', {:title => 'Contact Northwood Mortgage'}
 
     

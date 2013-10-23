@@ -9,7 +9,7 @@
 - elsif @public_area and !@agent_area
   - if request_from_reversemortgageplan?
     = render :partial => 'contacts/reverse_mortgage_contact_request'
-    = link_to 'Nothwoodmortgage.com', SITE_URL, :class => 'northwood_link'
+    = link_to 'Nothwoodmortgage.com', SITE_URL, :class => 'northwood_link', :title => 'Home & Commercial Mortgage Services'
     
   - else
     = link_to '<span>Apply Now</span>', pre_approval_application_path, :class => 'apply_now'

@@ -7,7 +7,7 @@
 
     = stylesheet_link_tag 'master', 'content'
     = javascript_include_tag :defaults
-
+    =render :partial => 'layouts/google_analytics'
          
   %body
 
@@ -45,7 +45,8 @@
             %h1= @page_header 
           = @content_for_layout
         
-        .clearfloat &nbsp;
+        .clearfloat &nbsp;	
+        =render :partial => 'layouts/adludge'
       
       #footer
         .content
@@ -57,7 +58,7 @@
               = mail_to @user.email, @user.email, :encode => 'hex'
             -else
               416-969-8130
-              = mail_to 'info@northwoodmortgage.com', 'info@northwoodmortgage.com', :encode => 'hex'
+              = mail_to 'info@northwoodmortgage.com', 'info@northwoodmortgage.com', :encode => 'hex', :title => 'Contact Northwood Mortgage'
 
           .hr
           .logos

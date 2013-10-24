@@ -80,6 +80,24 @@
             = link_to "The Working Group", "http://www.theworkinggroup.ca"
             &amp; Designed by 
             = link_to "Mouth Media", "http://www.mouthmedia.com"
+
+            <br>
+            = link_to 'Home', SITE_URL ,{ :title => "Home & Commercial Mortgage Services" }
+            |
+            = link_to 'About Us', '/about',{ :title => "About Us" }
+            |
+            = link_to 'Mortgage Rates', '/mortgage-rates', {:title => 'Best Mortgage Rate'}
+            |
+            = link_to 'Mortgage Solutions', '/mortgages', {:title => 'First & Second Residential Mortgage Solutions'}
+            |
+            = link_to 'Client Testimonials', '/testimonials' , :title => 'Northwood Mortgage Testimonials'
+            |
+            = link_to "Terms & Conditions", "/terms-and-conditions",:title => "Terms and Conditions" 
+            |
+            = link_to 'Contact Us', '/contact', {:title => 'Contact Northwood Mortgage'}
+            |
+            = link_to 'Sitemap', '/sitemap.html', {:title => 'Northwood Mortgage Sitemap'}
+
           .disclaimer
             The material provided in the pages of this website is for informational purposes only. Although the site owner and creators assume the information to be correct, and attempt to keep information in the pages of this website as current as possible, they do not warrant the accuracy or completeness of any information included in or linked to this page.
             -if session[:show_tracking_scripts]

@@ -130,9 +130,9 @@ class ContentController < ApplicationController
       if agent
         redirect_to '/' + agent.webpage_address
       elsif params[:contact_page]
-        redirect_to '/contact'
+        redirect_to '/thanks.html'
       else  
-        redirect_to '/'
+        redirect_to '/thanks.html'
       end  
       
     end

@@ -58,7 +58,7 @@ module ApplicationHelper
     header = []
     if page_header = Header.find_by_path(request.env["PATH_INFO"])
       header << "<title>#{page_header.title}</title>" if page_header.title
-      header << "\n<meta name='keywords' content=\"#{page_header.keywords}\" />"  if page_header.keywords
+      # header << "\n<meta name='keywords' content=\"#{page_header.keywords}\" />"  if page_header.keywords
       header << "\n<meta name='description' content=\"#{page_header.description}\" />" if page_header.description
     else
       header << "<title>Northwood Mortgage#{(@page_title ? " - #{@page_title}" : "")}</title>"

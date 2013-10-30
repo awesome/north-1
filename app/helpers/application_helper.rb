@@ -61,7 +61,7 @@ module ApplicationHelper
       # header << "\n<meta name='keywords' content=\"#{page_header.keywords}\" />"  if page_header.keywords
       header << "\n<meta name='description' content=\"#{page_header.description}\" />" if page_header.description
     else
-      header << "<title>Northwood Mortgage#{(@page_title ? " - #{@page_title}" : "")}</title>"
+      header << "<title>Northwood Mortgage Toronto#{(@page_title ? " - #{@page_title}" : "")}</title>"
       #fall back for meta descrption to home page's description
       header << "\n <meta name='description' content=''Northwood Mortgage™ Ltd. is one of the largest independent greater Toronto mortgage broker firms. We offer unmatched mortgage rates and investment services./>"
     end

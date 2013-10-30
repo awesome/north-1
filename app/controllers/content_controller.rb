@@ -31,7 +31,11 @@ class ContentController < ApplicationController
       return
     end
     file = params[:path].empty?  ?  'index'  :  params[:path].join('/');
-    
+    # fallback to home page's meta details if path is empty (shouldn't happend but ensuring)
+    if params[:path].empty?
+      @page_title = "Home & Commercial Mortgage Services"
+      @page_description = "Northwood Mortgage?~D? Ltd. is one of the largest independent greater Toronto mortgage broker firms. We offer unmatched mortgage rates and investment services."
+    end
     # See if file exists at this path  
     if File.exists? full_path(file)
       render :file => full_path(file), :layout => 'application'

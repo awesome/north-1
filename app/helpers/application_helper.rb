@@ -14,10 +14,10 @@ module ApplicationHelper
     header_img_path = request_from_reversemortgageplan? ? "reversemortgageplan/" : ''
     if @public_area and params[:path] and params[:path].empty?
       random_header = 1 + rand(7)
-      content_tag(:div,'', :id => 'header_image', :style => "background-image: url(/images/headers/#{header_img_path}large/header#{random_header}.jpg)")
+      content_tag(:div,'', :id => 'header_image', :style => "background-image: url(/images/headers/#{header_img_path}large/header#{random_header}.jpg)", :title=>"Home & Commercial Mortgage Services – Northwood Mortgage")
     else
       random_header = 1 + rand(8)
-      content_tag(:div,'', :id => 'header_image', :style => "background-image: url(/images/headers/#{header_img_path}small/header#{random_header}.jpg); height: 226px; margin-bottom: 10px")
+      content_tag(:div,'', :id => 'header_image', :style => "background-image: url(/images/headers/#{header_img_path}small/header#{random_header}.jpg); height: 226px; margin-bottom: 10px", :title=>"Home & Commercial Mortgage Services – Northwood Mortgage")
     end
   end
   

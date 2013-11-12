@@ -52,7 +52,7 @@ end
 # Multiple vulnerabilities in parameter parsing in Action Pack (CVE-2013-0156) 
 ActionController::Base.param_parsers.delete(Mime::XML) 
 
-ExceptionNotifier.exception_recipients = %w(sean@theworkinggroup.ca jack@theworkinggroup.ca) 
+ExceptionNotifier.exception_recipients = %w(sathish.k@techwyseintl.com neo@codingarena.in) 
 ExceptionNotifier.sender_address = %("Application Error" <admin@northwoodmortgage.com>) 
 ExceptionNotifier.email_prefix = "[Northwoood] "
 

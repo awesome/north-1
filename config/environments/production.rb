@@ -16,14 +16,18 @@ config.action_controller.perform_caching             = true
 
 # Disable delivery errors, bad email addresses will be ignored
 # config.action_mailer.raise_delivery_errors = false
-#require 'smtp_tls'
-#
 
+require 'smtp_tls'
 ActionMailer::Base.smtp_settings = {
-  :address => "mail2.twg.ca",
-  :domain => "northwoodmortgage.com",
-  :port  => 25
+  :address              => "smtp.gmail.com",
+  :port                 => 587,
+  :domain               => "codingarena.in",
+  :user_name            => "northwood@codingarena.in",
+  :password             => "password",
+  :authentication       => "plain",
+  :enable_starttls_auto => true
 }
+
 
 SYSTEM_EMAIL = 'application@northwoodmortgage.com'
 

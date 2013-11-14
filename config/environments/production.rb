@@ -18,18 +18,13 @@ config.action_controller.perform_caching             = true
 # config.action_mailer.raise_delivery_errors = false
 
 require 'smtp_tls'
-ActionMailer::Base.smtp_settings = {
-  :address              => "smtp.gmail.com",
-  :port                 => 587,
-  :domain               => "codingarena.in",
-  :user_name            => "northwood@codingarena.in",
-  :password             => "password",
-  :authentication       => "plain",
-  :enable_starttls_auto => true
+ActionMailer::Base.delivery_method = :sendmail
+ActionMailer::Base.sendmail_settings = {
+  :location => "/usr/sbin/sendmail",
+  :arguments => "-i -t"
 }
 
-
-SYSTEM_EMAIL = 'application@northwoodmortgage.com'
+SYSTEM_EMAIL = 'allan@northwoodmortgage.com'
 
 SITE_URL = 'http://www.northwoodmortgage.com'
 
